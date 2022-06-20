@@ -17,19 +17,3 @@
   display: flex;
   padding:1rem;
 }
-
-.line1{
-  position: absolute;
-  transform: rotate(45deg);
-  height: 3rem;
-  width: .3rem;
-  background-color: black;
-}
-
-.line2{
-  position: absolute;
-  transform: rotate(-45deg);
-  height: 3rem;
-  width: .3rem;
-  background-color: black;
-}
