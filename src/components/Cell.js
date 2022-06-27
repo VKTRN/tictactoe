@@ -11,8 +11,8 @@ export const Cell = ({index,cells, setCells,turn}) => {
 
   return (
     <div className = 'cell' onClick = {handleClick}>
-     {cells[index] === "o" && <span>O</span>}
-     {cells[index] === "x" && <span>X</span>}
+     {cells[index] === "o" && <span className = 'red sign'>o</span>}
+     {cells[index] === "x" && <span className = 'blue sign'>x</span>}
     </div>
   )
 }
