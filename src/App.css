@@ -17,6 +17,7 @@ body{
   justify-content: center;
   align-items: center;
   font-size: 5rem;
+  font-weight:400;
 }
 
 .container{
@@ -39,12 +40,11 @@ body{
 }
 
 .App{
+  font-family: 'Comfortaa';
   display: flex;
   justify-content: center;
   align-items: center;
   padding:1rem;
-  font-family: 'Comfortaa';
-  font-weight:400;
 }
 
 button{
@@ -54,12 +54,14 @@ button{
   border-radius: .5rem;
   padding: .5rem 1rem;
   font-size: 1rem;
-  font-weight: 400;
   cursor: pointer;
-  transition: all .2s ;
+  transition: all .2s;
 }
 
 button:hover{
   background-color: rgb(61, 49, 84);
-  color: rgb(217, 217, 255);
+}
+
+.count{
+  font-size: 2rem;
 }
