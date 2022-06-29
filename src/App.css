@@ -2,6 +2,19 @@ body{
   background-color: rgb(118, 100, 169);
 }
 
+.App{
+  font-family: 'Comfortaa';
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:1rem;
+}
+
+.score{
+  font-size: 3rem;
+}
+
 .grid{
   display: grid;
   grid-template-columns: repeat(3,4rem);
@@ -20,31 +33,16 @@ body{
   font-weight:400;
 }
 
-.container{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.blue{
-  color: rgb(191, 191, 239);
-}
-
-.red{
-  color: rgb(62, 34, 115);
-}
-
 .sign{
   transform: translateY(-.25rem);
 }
 
-.App{
-  font-family: 'Comfortaa';
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding:1rem;
+.x{
+  color: rgb(191, 191, 239);
+}
+
+.o{
+  color: rgb(62, 34, 115);
 }
 
 button{
@@ -60,8 +58,4 @@ button{
 
 button:hover{
   background-color: rgb(61, 49, 84);
-}
-
-.count{
-  font-size: 2rem;
 }

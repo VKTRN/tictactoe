@@ -1,7 +1,8 @@
-import './App.css';
-import {Grid} from './components/Grid'
-import {useState} from 'react'
-import {useEffect} from 'react'
+import {useState}   from 'react'
+import {useEffect}  from 'react'
+import {Grid}       from './components/Grid'
+import {ScoreBoard} from './components/ScoreBoard'
+import './App.css'
 
 function App() {
 
@@ -59,10 +60,8 @@ function App() {
 
   return (
     <div className="App">
-      <div className = 'count'>
-        <span className = 'blue'>{score.x}</span> : <span className = 'red'>{score.o}</span>
-      </div>
-      <Grid cells = {cells} setCells = {setCells} turn = {turn}/>
+      <ScoreBoard score={score}/>
+      <Grid cells={cells} setCells={setCells} turn={turn}/>
       <button onClick = {resetGame}>Reset</button>
     </div>
   );
