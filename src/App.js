@@ -37,6 +37,13 @@ function App() {
     return !emptyCells
   }
 
+  const setCell = (index) => {
+    if(cells[index] !== "") return
+    const newCells = [...cells]
+    newCells[index] = turn
+    setCells(newCells)
+  }
+
   const resetGame = () => {
     setCells(Array(9).fill(""))
     setScore({'x':0,'o':0})
@@ -61,7 +68,7 @@ function App() {
   return (
     <div className="App">
       <ScoreBoard score={score}/>
-      <Grid cells={cells} setCells={setCells} turn={turn}/>
+      <Grid cells={cells} setCell={setCell}/>
       <button onClick = {resetGame}>Reset</button>
     </div>
   );
